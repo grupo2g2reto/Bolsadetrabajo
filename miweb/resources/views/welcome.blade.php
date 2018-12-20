@@ -1,33 +1,29 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
+@extends('layouts.master')
 
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-      
-    </head>
-    <body>
-
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-    </body>
-</html>
+@section('content')
+<div class="container p-5">
+        <div class="row justify-content-center align-items-center">
+            <div  class="col-md-6">
+                <div id="login-border" class="login-box col-md-12   p-5">
+                    <form class="form" action="" method="post">
+                        <h3 class="text-center text-success">LOGIN</h3>
+                        <div class="form-group">
+                            <label for="email" class="text-success">Email:</label><br>
+                            <input type="text" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-success">Contraseña:</label><br>
+                            <input type="text" name="password" id="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="remember-me" class="text-success"><span>¿Has olvidado la contraseña?</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                            <input type="submit" name="submit" class="btn btn-light btn-md border border-dark" value="Enviar">
+                        </div>
+                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

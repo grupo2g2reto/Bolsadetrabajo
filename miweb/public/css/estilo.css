@@ -1,0 +1,13 @@
+body {
+    background-color: white;
+}
+#login-border{
+    box-shadow: 5px 5px 4px 3px rgba(121, 201, 47, 0.541);
+    background-image: linear-gradient(to right, white, rgba(240, 231, 231, 0.623));
+    border: 3px dashed green;
+}
+
+.fondo{
+    background-image: linear-gradient(to right,rgb(58, 197, 58),rgba(0, 128, 0, 0.938),rgba(80, 194, 80, 0.952));
+
+}
